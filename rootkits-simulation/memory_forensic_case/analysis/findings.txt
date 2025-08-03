@@ -1,0 +1,26 @@
+# findings.txt – Resultados del análisis con Volatility
+
+Fecha de análisis: [DD/MM/AAAA]
+Analista: [Tu nombre o alias]
+
+[1] Procesos ocultos detectados:
+- sample_hider.exe no aparece en pslist, pero sí en psscan
+- PID: xxxx | Parent PID: yyyy
+
+[2] Conexiones de red sospechosas:
+- Dirección destino: 192.168.56.102:443
+- No asociada a proceso en pslist
+
+[3] Módulos cargados anómalos:
+- Dirección: 0xfffffxxxxxxx
+- No reconocido por el sistema
+
+[4] Comandos utilizados:
+- vol.py -f MEMORY_DUMP.raw windows.psscan
+- vol.py -f MEMORY_DUMP.raw windows.netscan
+- vol.py -f MEMORY_DUMP.raw windows.modscan
+[...]
+
+[5] Observaciones adicionales:
+- Tiempo de permanencia del proceso oculto: xx segundos
+- Dump generado con: DumpIt (hash MD5: ...)
