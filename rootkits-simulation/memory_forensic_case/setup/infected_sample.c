@@ -1,10 +1,10 @@
 // infected_sample.c
 // Simulación para análisis forense en memoria con Volatility
-
+#include <winsock2.h>
 #include <windows.h>
 #include <stdio.h>
 #include <tlhelp32.h>
-#include <winsock2.h>
+
 #pragma comment(lib, "Ws2_32.lib")
 
 DWORD WINAPI backgroundThread(LPVOID lpParam) {
